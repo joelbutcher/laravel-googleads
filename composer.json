@@ -1,0 +1,44 @@
+{
+    "name": "joelbutcher/laravel-googleads",
+    "description": "",
+    "keywords": ["googleads", "laravel", "google", "advertising"],
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/joelbutcher/laravel-googleads",
+        "source": "https://github.com/joelbutcher/laravel-googleads"
+    },
+    "authors": [
+        {
+            "name": "Joel Butcher",
+            "email": "joel@joelbutcher.co.uk"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.0",
+        "joelbutcher/googleads-client-oauth2-wrapper": "^1.0.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "JoelButcher\\LaravelGoogleAds\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "JoelButcher\\LaravelGoogleAds\\ServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
