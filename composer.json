@@ -1,6 +1,6 @@
 {
     "name": "joelbutcher/laravel-googleads",
-    "description": "",
+    "description": "Laravel Service Provider for the Google Ads Client OAuth2 Wrapper",
     "keywords": ["googleads", "laravel", "google", "advertising"],
     "license": "MIT",
     "support": {

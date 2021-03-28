@@ -1,9 +1,6 @@
 # Laravel Google Ads
 
 <p align="center">
-    <a href="https://github.com/joelbutcher/laravel-googleads"actions">
-        <img src="https://github.com/joelbutcher/laravel-googleads"workflows/tests/badge.svg" alt="Build Status">
-    </a>
     <a href="https://packagist.org/packages/joelbutcher/laravel-googleads">
         <img src="https://img.shields.io/packagist/dt/joelbutcher/laravel-googleads" alt="Total Downloads">
     </a>
