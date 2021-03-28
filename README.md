@@ -19,22 +19,22 @@ A Laravel wrapper for the Google Ads Api Client OAuth2 Wrapper.
 Install the package via composer:
 
 ```sh
-    composer require joelbutcher/laravel-googleads
+composer require joelbutcher/laravel-googleads
 ```
 
 Add the service provider to your package service providers in `config/app.php`:
 
 ```php
-    /*
-    * Package Service Providers...
-    */
-    \JoelButcher\LaravelGoogleAds\ServiceProvider::class,
+/*
+* Package Service Providers...
+*/
+\JoelButcher\LaravelGoogleAds\ServiceProvider::class,
 ```
 
 Then publish the config file:
 
 ```sh
-    php artisan vendor:publish --provider="JoelButcher\LaravelGoogleAds\ServiceProvider"
+php artisan vendor:publish --provider="JoelButcher\LaravelGoogleAds\ServiceProvider"
 ```
 
 Ensure the following .env variables are set:
@@ -55,11 +55,11 @@ Check out the [CHANGELOG](CHANGELOG.md) in this repository for all the recent ch
 
 ## Maintainers
 
-Socialstream is developed and maintained by [Joel Butcher](https://joelbutcher.co.uk)
+Developed and maintained by [Joel Butcher](https://joelbutcher.co.uk)
 
 ## Credits
 
-Socialstream has a strong community of contributors helping make it the best package for integrating Socialite into your application. You can view all contributers [here](https://github.com/joelbutcher/laravel-googleads/graphs/contributors)
+You can view all contributers [here](https://github.com/joelbutcher/laravel-googleads/graphs/contributors)
 
 ## License
 
