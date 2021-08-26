@@ -32,7 +32,7 @@ class ServiceProvider extends BaseServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__ . '/../config/laravel-googleads.php' => config_path('laravel-googleads.php'),
+            __DIR__.'/../config/laravel-googleads.php' => config_path('laravel-googleads.php'),
         ], 'laravel-googleads-config');
     }
 }
