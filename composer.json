@@ -14,8 +14,8 @@
         }
     ],
     "require": {
-        "php": ">=7.0 || >=8.0",
-        "joelbutcher/googleads": "^1.0.0"
+        "php": "^7.3|^8.0",
+        "joelbutcher/googleads": "^2.0.0"
     },
     "autoload": {
         "psr-4": {
