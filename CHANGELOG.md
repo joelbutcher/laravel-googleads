@@ -3,6 +3,12 @@
 
 This changelog follows [the Keep a Changelog standard](https://keepachangelog.com).
 
+## [v1.0.1](https://github.com/joelbutcher/laravel-googleads/compare/v1.0.1...v2.0.0)
+
+### Changes
+
+- Drop support for PHP < 7.3
+
 ## [v1.0.1](https://github.com/joelbutcher/laravel-googleads/compare/v1.0.0...v1.0.1)
 
 ### Changes
