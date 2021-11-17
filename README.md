@@ -77,7 +77,7 @@ $service = $this->googleAds->getCampaignServiceClient();
 ## Versioning
 PHP supported version: `^7.3|^8.0`
 
-Google Ads PHP SDK versions: `^11.0` [(V8)](https://github.com/googleads/google-ads-php/tree/main/src/Google/Ads/GoogleAds/V8)
+Google Ads PHP SDK versions: `^11.0` [(V9)](https://github.com/googleads/google-ads-php/tree/main/src/Google/Ads/GoogleAds/V9)
 
 ## Changelog
 
