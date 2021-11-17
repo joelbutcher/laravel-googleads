@@ -47,7 +47,7 @@ GOOGLE_LOGIN_CUSTOMER_ID=""
 ```
 
 ## Versioning
-Currently, we only support v6 of the client.
+Currently, we only support PHP >= 7.3 and the [official Google Ads PHP](https://github.com/googleads/google-ads-php) version 11 or higher.
 
 ## Changelog
 
