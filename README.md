@@ -46,8 +46,38 @@ GOOGLE_DEVELOPER_TOKEN=""
 GOOGLE_LOGIN_CUSTOMER_ID=""
 ```
 
+## Usage
+
+To use the Google Ads Service, you may inject the service into the constructor of your class, like below:
+
+```php
+<?php
+
+use JoelButcher\GoogleAds\GoogleAds;
+
+class MyClass
+{
+    public function __construct(private GoogleAds $googleAds) {}
+}
+```
+
+You may then call any of the methods found on the wrapped [Google Ads Client](https://github.com/googleads/google-ads-php/blob/main/src/Google/Ads/GoogleAds/Lib/V8/GoogleAdsClient.php)
+
+```php
+// As yourself
+$this->googleAds->authorize($refreshToken);
+
+// As an MCC on behalf of a managed customer
+$this->googleAds->authorize($refreshToken, $customerId);
+
+// Campaign Service
+$service = $this->googleAds->getCampaignServiceClient();
+```
+
 ## Versioning
-Currently, we only support PHP >= 7.3 and the [official Google Ads PHP](https://github.com/googleads/google-ads-php) version 11 or higher.
+PHP supported version: `^7.3|^8.0`
+
+Google Ads PHP SDK versions: `^11.0` [(V8)](https://github.com/googleads/google-ads-php/tree/main/src/Google/Ads/GoogleAds/V8)
 
 ## Changelog
 
