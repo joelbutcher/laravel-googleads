@@ -37,13 +37,22 @@ Then publish the config file:
 php artisan vendor:publish --provider="JoelButcher\LaravelGoogleAds\ServiceProvider"
 ```
 
-Ensure the following .env variables are set:
+Update your services.php config file with the following
 
-```
-GOOGLE_CLIENT_ID=""
-GOOGLE_CLIENT_SECRET=""
-GOOGLE_DEVELOPER_TOKEN=""
-GOOGLE_LOGIN_CUSTOMER_ID=""
+```php
+<?php
+
+return [
+    'google' => [
+        'client_id' => env('GOOGLE_CLIENT_ID'),
+        'client_secret' => env('GOOGLE_CLIENT_SECRET'),
+    ],
+    
+    'google_ads' => [
+        'developer_token' => env('GOOGLE_ADS_DEVELOPER_TOKEN'),
+        'sdk_version' => env('GOOGLE_ADS_VERSION'),
+    ],
+];
 ```
 
 ## Usage
@@ -75,22 +84,18 @@ $service = $this->googleAds->getCampaignServiceClient();
 ```
 
 ## Versioning
-PHP supported version: `^7.3|^8.0`
+PHP supported version: `^8.0`
 
-Google Ads PHP SDK versions: `^11.0` [(V9)](https://github.com/googleads/google-ads-php/tree/main/src/Google/Ads/GoogleAds/V9)
-
-## Changelog
-
-Check out the [CHANGELOG](CHANGELOG.md) in this repository for all the recent changes.
+Google Ads PHP SDK versions: `^17.0` [(V11)](https://github.com/googleads/google-ads-php/tree/main/src/Google/Ads/GoogleAds/V11)
 
 ## Maintainers
 
-Developed and maintained by [Joel Butcher](https://joelbutcher.co.uk)
+Developed and maintained by [Joel Butcher](https://joelbutcher.dev)
 
 ## Credits
 
-You can view all contributers [here](https://github.com/joelbutcher/laravel-googleads/graphs/contributors)
+You can view all contributors [here](https://github.com/joelbutcher/laravel-googleads/graphs/contributors)
 
 ## License
 
-This pacakge is open-sourced software licensed under the [MIT license](LICENSE.md).
+This package is open-sourced software licensed under the [MIT license](LICENSE.md).

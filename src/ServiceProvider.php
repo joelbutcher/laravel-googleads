@@ -15,24 +15,12 @@ class ServiceProvider extends BaseServiceProvider
     public function register()
     {
         $this->app->bind(GoogleAds::class, function () {
-            return new GoogleAds([
-                'client_id' => config('laravel-googleads.client_id'),
-                'client_secret' => config('laravel-googleads.client_secret'),
-                'developer_token' => config('laravel-googleads.developer_token'),
-                'login_customer_id' => (int) config('laravel-googleads.login_customer_id'),
-            ]);
+            return new GoogleAds(
+                clientId: config('services.google.client_id'),
+                clientSecret: config('services.google.client_secret'),
+                developerToken: config('services.google_ads.developer_token'),
+                sdkVersion: config('services.google_ads.sdk_version'),
+            );
         });
-    }
-
-    /**
-     * Bootstrap services.
-     *
-     * @return void
-     */
-    public function boot()
-    {
-        $this->publishes([
-            __DIR__.'/../config/laravel-googleads.php' => config_path('laravel-googleads.php'),
-        ], 'laravel-googleads-config');
     }
 }
