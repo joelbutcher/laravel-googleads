@@ -70,7 +70,7 @@ class MyClass
 }
 ```
 
-You may then call any of the methods found on the wrapped [Google Ads Client](https://github.com/googleads/google-ads-php/blob/main/src/Google/Ads/GoogleAds/Lib/V8/GoogleAdsClient.php)
+You may then call any of the methods found on the wrapped [Google Ads Client](https://github.com/googleads/google-ads-php/blob/main/src/Google/Ads/GoogleAds/Lib/V13/GoogleAdsClient.php)
 
 ```php
 // As yourself
@@ -86,7 +86,7 @@ $service = $this->googleAds->getCampaignServiceClient();
 ## Versioning
 PHP supported version: `^8.0`
 
-Google Ads PHP SDK versions: `^17.0` [(V11)](https://github.com/googleads/google-ads-php/tree/main/src/Google/Ads/GoogleAds/V11)
+Google Ads PHP SDK versions: `^19.0` ([V12](https://github.com/googleads/google-ads-php/tree/main/src/Google/Ads/GoogleAds/V12), [V13](https://github.com/googleads/google-ads-php/tree/main/src/Google/Ads/GoogleAds/V13))
 
 ## Maintainers
 
