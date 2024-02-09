@@ -1,7 +1,18 @@
 # Release Notes
+
 # Changelog
 
 This changelog follows [the Keep a Changelog standard](https://keepachangelog.com).
+
+## v7.0.0 - 2024-02-09
+
+**What's Changed**
+
+- Bumped GoogleAds SDK to v8.x
+- Removed Style CI in favour of Laravel's "code style" workflow
+- Added "update changelog" workflow
+
+**Full Changelog**: https://github.com/joelbutcher/laravel-googleads/compare/v6.0.0...v7.0.0
 
 ## [v1.0.1](https://github.com/joelbutcher/laravel-googleads/compare/v1.0.1...v2.0.0)
 
