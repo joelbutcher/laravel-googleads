@@ -4,6 +4,14 @@
 
 This changelog follows [the Keep a Changelog standard](https://keepachangelog.com).
 
+## v8.0.0 - 2024-10-09
+
+### What's Changed
+
+* [8.x] upgrade googleads to v9 by [@joelbutcher](https://github.com/joelbutcher) in https://github.com/joelbutcher/laravel-googleads/pull/9
+
+**Full Changelog**: https://github.com/joelbutcher/laravel-googleads/compare/v7.0.0...v8.0.0
+
 ## v7.0.0 - 2024-02-09
 
 **What's Changed**
